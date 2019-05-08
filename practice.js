@@ -124,8 +124,27 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+// function divider(numbersArray){
+//   let dividerArr = [[],[]]
+//   for(let i = 0; i < numbersArray.length; i++){
+//     if(numbersArray[i] % 2 === 0)
+//     return dividerArr[0].push(numbersArray[i])
+//   } else {
+//     return dividerArr[1].push(numbersArray[i])
+//   }
+// }
 
+function divider(numbersArray){
+  let dividerArr = [[], []]
+  for(let i = 0; i < numbersArray.length; i++){
+    if(numbersArray[i] % 2 === 0 ){
+      dividerArr[0].push(numbersArray[i])
+    } else {
+      dividerArr[1].push(numbersArray[i])
+    }
+  }
+  return dividerArr
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -146,7 +165,15 @@ var getRandomArbitrary = function() {
   If it is, return true, if it's not, return false
 */
 
-//Code Here
+function finder(array){
+  let randomNumber = getRandomArbitrary()
+  for(let i = 0; i <= array.length; i++){
+    if(randomNumber === array[i]){
+      return true
+    } 
+  }
+  return false
+}
 
 
 
@@ -175,9 +202,22 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem() --> [];
 */
 
-//Code Here
+function removeItem(){
 
+}
 
+function addItem(){
+
+}
+// function removeItem(myGroceryList, item){
+//   let removeArr = []
+//   for(let i = 0; i < myGroceryList.length; i++)
+//   if(item === myGroceryList[i]){
+//     return myGroceryList.splice(item, 1) 
+//   }
+//   removeArr.push(myGroceryList[i])
+// }
+// myGroceryList
 
 ////////// PROBLEM 9 //////////
 
@@ -185,7 +225,9 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 */
 
-//Code Here
+function maker(){
+
+}
 
 
 
@@ -202,6 +244,9 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 */
   
 //Code Here
+function addTen(){
+  
+}
 
 
 
@@ -227,6 +272,9 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+function longer(){
+
+}
 
 
 
@@ -239,6 +287,9 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
+function both(arr1, arr2){
+
+}
 
 
 
@@ -279,6 +330,7 @@ var colt = {
 */
 
 //Code Here
+
 
 
 
